@@ -14,7 +14,7 @@ tickerSymbol = st.text_input('Enter your ticker symbol!')
 
 st.write("""
 # Before we actually create the graphs for your stock, let's experiment with your BMI!
-""")
+""") 
 
 if len(tickerSymbol) != 0:
     

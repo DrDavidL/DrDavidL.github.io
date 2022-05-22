@@ -1,10 +1,43 @@
 
 import yfinance as yf
 import streamlit as st
+from streamlit_pages.streamlit_pages import MultiPage
+
+
+ 
+
+# multiple pages test
+
+def home():
+    st.write("Welcome to home page")
+    if st.button("Click Home"):
+        st.write("Welcome to home page")
+
+
+def about():
+    st.write("Welcome to about page")
+    if st.button("Click about"):
+        st.write("Welcome to About page")
+
+
+def contact():
+    st.write("Welcome to contact page")
+    if st.button("Click Contact"):
+        st.write("Welcome to contact page")
+
+
+# call app class object
+app = MultiPage()
+# Add pages
+app.add_page("Home",home)
+app.add_page("About",about)
+app.add_page("Contact",contact)
+app.run()
+
+# end multiple pages test
 
 st.write("""
-# Demo Stock Price App - many more data options possible! 
-Shown are the stock closing price and volume of Google!
+# Demo Stock Price App - Enter stock of interest for demonstration purposes here.
 """)
 
 # https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
@@ -32,7 +65,7 @@ if len(tickerSymbol) != 0:
 
         bmi = weightkg / (heightcm/100)**2
 
-        st.write("Your BMI is:", round(bmi,1))
+        st.write("# Your BMI is:", round(bmi,1))
 
         # print(round(bmi,1))
 

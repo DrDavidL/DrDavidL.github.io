@@ -18,6 +18,9 @@ app.add_page("Prime Generator", primes)
 
 # Add the main content
 st.title("Python on the Web - Welcome FSM!")
-st.write('*These are examples of python pushed to the web. More to come!*')
+st.write("*These are examples of python apps made available to users over the web. More models and algorithms to come! *")
+
+
+st.write("The scripts are running on a cloud server, not on your local computer. The generation of apps to build websites from python code is possible via the [Streamlit](https://pypi.org/project/streamlit/) framework.")
 
 app.run()

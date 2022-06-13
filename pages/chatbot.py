@@ -43,8 +43,8 @@ def chatbot():
 
     st.session_state.old_response = response
 
-    inputs = []
-    responses = []
+    inputs = [""]
+    responses = [""]
 
     if len(inputs) < 6:
         inputs.append(input)
@@ -59,7 +59,7 @@ def chatbot():
         responses.pop()
 
     i = 0
-    while i < 6:
+    if i < 6:
         st.write("User: ", inputs[i])
         st.write("""
         

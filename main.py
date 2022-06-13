@@ -17,6 +17,7 @@ app = MultiPage()
 app.add_page("BMI Calculator", bmiapp)
 app.add_page("Stock Chart", stockapp)
 app.add_page("Prime Generator", primes)
+app.add_page("Chatbot trial", chatbot)
 
 # Add the main content
 st.title("Python on the Web - Welcome FSM!")

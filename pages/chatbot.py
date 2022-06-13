@@ -19,7 +19,7 @@ def chatbot():
 
     st.write("Welcome to the Chatbot. I am still learning, please be patient")
 
-    input = st.text_input('User:')
+    input = st.text_input('Your comment:')
 
     if 'count' not in st.session_state or st.session_state.count == 6:
         st.session_state.count = 0 
@@ -41,7 +41,7 @@ def chatbot():
         st.session_state.chat_history_ids = model.generate(bot_input_ids, max_length=5000, pad_token_id=tokenizer.eos_token_id)
         response = tokenizer.decode(st.session_state.chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
 
-    st.write(f"Chatbot: {response}")
+    st.write(f"My answer: {response}")
 
     st.session_state.old_response = response
 

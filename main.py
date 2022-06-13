@@ -6,6 +6,7 @@ from multipage import MultiPage
 from pages.bmiapp import bmiapp
 from pages.stockapp import stockapp
 from pages.primes import primes
+from pages.chatbot import chatbot
 
 # import torch
 # import transformers

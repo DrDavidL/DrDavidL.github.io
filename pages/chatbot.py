@@ -47,7 +47,11 @@ def chatbot():
 
     history[input] = response
 
-    history
+    for n in history:
+        st.write("You said: ", n)
+        st.write("I responded: ", history[n])
+
+
 
 
 

@@ -5,6 +5,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 import streamlit as st
 
+history = {}
+
 def chatbot():
 
     @st.cache(hash_funcs={transformers.models.gpt2.tokenization_gpt2_fast.GPT2TokenizerFast: hash}, suppress_st_warning=True)
@@ -43,29 +45,36 @@ def chatbot():
 
     st.session_state.old_response = response
 
-    inputs = [""]
-    responses = [""]
+    history[input] = response
 
-    if len(inputs) < 6:
-        inputs.append(input)
-    else:
-        inputs[0] = input
-        inputs.pop()
+    history
 
-    if len(responses) < 6:
-        responses.append(response)
-    else:
-        responses[0] = response
-        responses.pop()
 
-    i = 0
-    if i < 6:
-        st.write("User: ", inputs[i])
-        st.write("""
+
+
+
+
+
+    # if len(inputs) < 6:
+    #     inputs.append(input)
+    # else:
+    #     inputs[0] = input
+    #     inputs.pop()
+
+    # if len(responses) < 6:
+    #     responses.append(response)
+    # else:
+    #     responses[0] = response
+    #     responses.pop()
+
+    # i = 0
+    # if i < 6:
+    #     st.write("User: ", inputs[i])
+    #     st.write("""
         
-        """)
-        st.write("Bot: ", responses[i])
-        i += 1
+    #     """)
+    #     st.write("Bot: ", responses[i])
+    #     i += 1
     
     # input = st.text_input('User:')
 

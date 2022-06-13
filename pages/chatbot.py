@@ -64,7 +64,7 @@ def chatbot():
         st.write("""
         
         """)
-        st.write("Bot: ", responses[i]
+        st.write("Bot: ", responses[i])
         i += 1
     
     input = st.text_input('User:')

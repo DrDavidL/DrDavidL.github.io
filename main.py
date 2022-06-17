@@ -21,7 +21,7 @@ app.add_page("Prime Generator", primes)
 app.add_page("Chatbot fun", chatbot)
 
 # Add the main content
-st.title("Python on the Web - Welcome FSM!")
+st.title("Python on the Web - Welcome FSM!!!")
 st.write("These are examples of python apps made available to users over the web. More models and algorithms to come! ")
 
 

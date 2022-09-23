@@ -114,7 +114,7 @@ plumbum==1.7.1
 ply==3.11
 prometheus-client==0.14.1
 prompt-toolkit==3.0.29
-protobuf==3.19.1
+protobuf==3.19.5
 psutil==5.9.1
 ptyprocess==0.7.0
 pure-eval==0.2.2

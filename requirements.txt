@@ -70,7 +70,7 @@ itsdangerous==2.0.1
 jedi==0.18.1
 Jinja2==3.0.3
 jmespath==0.10.0
-joblib==1.1.0
+joblib==1.2.0
 jsonpickle==2.0.0
 jsonschema==4.2.1
 jupyter-client==7.1.0

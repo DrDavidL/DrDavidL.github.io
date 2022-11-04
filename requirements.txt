@@ -188,7 +188,7 @@ transformers>=2.1.0
  tqdm==4.62.3
  traitlets==5.1.1
 Tubes==0.2.0
-Twisted==21.7.0
+Twisted==22.10.0
 typing==3.7.4.3
 typing_extensions==4.0.0
 tzdata==2021.5

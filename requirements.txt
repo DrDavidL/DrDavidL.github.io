@@ -108,7 +108,7 @@ parso==0.8.3
 pathlib==1.0.1
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==8.4.0
+Pillow==9.3.0
 plotly==5.8.0
 plumbum==1.7.1
 ply==3.11
